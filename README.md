@@ -56,10 +56,10 @@ $ npm run dev
 ### Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
-</p>
+
+- [SQLite](https://www.sqlite.org/)
 - [Node.js](https://nodejs.org/en/)
-- [SQLite](https://sqlite.org)
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
 
 ### Licença
 
@@ -69,6 +69,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
   
   Feito com muita vontade! por mim :heart:
   
+  
+
 
 
 

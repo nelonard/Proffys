@@ -62,7 +62,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Licença
 
-  Você poderá encontrar detalhes sobre a licença <a href="https://github.com/nelonard/Proffys/blob/master/README.md" target="_blank"> aqui</a>
+  Você poderá encontrar detalhes sobre a licença <a href="https://github.com/nelonard/Proffys/blob/master/LICENSE.md" target="_blank"> aqui</a>
   
   ### Autor
   

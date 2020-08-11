@@ -12,7 +12,7 @@
 </p>
 
 <h4 align="center">
-    Em desenvolvimento | Correção de bugs... (emote de lupa, ou construção)
+    Em desenvolvimento | Correção de bugs... 
 </h4>
 
 ### Features

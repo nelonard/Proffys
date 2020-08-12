@@ -10,7 +10,7 @@ function pageLanding(req,res){
 async function  pageStudy(req,res){
     const filters = req.query
     
-    if(!filters.subject || !filters.dates || !filters.time){
+    if(!filters.subject || !filters.date || !filters.time){
 
         return res.render("study.html",{filters, subjects, dates})
     }
@@ -27,7 +27,7 @@ async function  pageStudy(req,res){
                 SELECT class_schedule.*
                 FROM class_schedule
                 WHERE class_schedule.class_id = classes.id
-                AND  class_schedule.weekday = ${filters.dates}
+                AND  class_schedule.weekday = ${filters.date}
                 AND  class_schedule.time_from <= ${timeToMinutes}
                 AND  class_schedule.time_to >= ${timeToMinutes}
             )
@@ -36,6 +36,9 @@ async function  pageStudy(req,res){
     try {
         const db = await database
         const proffys = await db.all(query)
+        proffys.map((proffy) =>{
+            proffy.subject = getSubject(proffy.subject)
+        })
         
         return res.render('study.html', { proffys, subjects, filters, dates})
     } catch (error) {
@@ -75,8 +78,9 @@ async function saveClasses(req,res ){
         await createProffy(db,{proffyValue, classValue, classScheduleValues})
 
       let queryString = "?subject=" +req.body.subject
-      queryString  += + "&weekday="+req.body.weekday[0]
-      queryString  += + "&time="+req.body.time_from[0]
+      queryString  +=  "&weekday="+req.body.weekday[0]
+      queryString  +=  "&time="+req.body.time_from[0]
+      
       return res.redirect("/study"+ queryString)
     } catch (error) {
         console.log(error)

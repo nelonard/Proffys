@@ -39,7 +39,7 @@ $ cd src
 # Instale as dependências
 $ npm install express
 $ npm install nunjucks
-$ npm install sqlite
+
 
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev
@@ -66,7 +66,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
   
   ### Autor
   
-  Feito com muita vontade! por mim :heart:
+  Feito com muita vontade! por <a href="https://www.linkedin.com/in/leonardo-silva-1626b8161/">@LeonardoSPaula</a> :heart: junto com o instrutor <a href="https://www.linkedin.com/in/maykbrito/">@MaykBrito</a> durante a <a href="https://rocketseat.com.br/">Next Level Week</a> da <a href="https://www.linkedin.com/school/rocketseat/">Rocketseat :rocket:</a>
   
   
 
